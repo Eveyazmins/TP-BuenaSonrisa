@@ -1,0 +1,91 @@
+<div class="fondo">
+
+    <div>
+    <input class="myButton" type="button" value="registro de logueos" (click)="mostrar('logueos')">
+    <br>
+    <br>
+    <input class="myButton" type="button" value="cantidad de turnos realizados" (click)="mostrar('turnos')">
+</div>
+<div *ngIf="tipo == 'logueos'">
+    <h1 style="text-align: center">Registros de Logueo</h1>
+        <section id="tabs" class="project-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                           
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <table class="table" cellspacing="0" style="text-align: center">
+                                        <thead>
+                                            <tr>
+                                              <th>Fecha</th>
+                                              <th>Email</th>
+                                              
+                                            </tr>
+                                        </thead>
+                                        <tbody style="text-align: center" *ngFor="let turno of lista">
+                                            <tr >
+                                                <td>{{turno.fecha | date:'medium'}}</td>
+                                                <td>{{turno.email}}</td>
+                                                
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <div *ngIf="tipo == 'turnos'">
+                <h1 style="text-align: center">Turnos Registrados</h1>
+                    <section id="tabs" class="project-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                       
+                                        <div class="tab-content" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                <table class="table" cellspacing="0" style="text-align: center">
+                                                    <thead>
+                                                        <tr>
+                                                          <th>Cantidad</th>
+                                                          <th>Especialidad</th>
+                                                          
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody style="text-align: center" >
+                                                        <tr >
+                                                            <td>{{contMecanica}}</td>
+                                                            <td>Mecanica</td>
+                                                            
+                                                            
+                                                        </tr>
+                                                        <tr >
+                                                                <td>{{contClinico}}</td>
+                                                                <td>Clinico</td>
+                                                                
+                                                                
+                                                            </tr>
+                                                            <tr >
+                                                                    <td>{{contImagenes}}</td>
+                                                                    <td>Imagenes</td>
+                                                                    
+                                                                    
+                                                                </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+</div>

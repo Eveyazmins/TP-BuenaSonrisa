@@ -1,0 +1,147 @@
+/*.imagenDeQuienSoy{
+    width: 100%;
+   
+    }
+body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+}
+p {font-size: 16px;}
+.margin {margin-bottom: 45px;}
+.bg-1 { 
+    background-color: #1abc9c; /* Green 
+    color: #ffffff;
+}
+.bg-2 { 
+    background-color: #474e5d; /* Dark Blue 
+    color: #ffffff;
+}
+.bg-3 { 
+    background-color: #ffffff; /* White 
+    color: #555555;
+}
+.bg-4 { 
+    background-color: #2f2f2f; /* Black Gray 
+    color: #fff;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+*/
+.fondo{
+
+    background-image: url(".../../../docs/assets/imagenes/slider-bg-2.jpg");
+    margin-top: -60px;
+  }
+  
+body {
+    font-family: 'Roboto';font-size: 16px;
+}
+
+.aboutus-section {
+    padding: 90px 0;
+}
+.aboutus-title {
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 39px;
+    padding: 0 0 11px;
+    position: relative;
+    text-transform: uppercase;
+    color: chartreuse;
+    text-align: center;
+}
+.aboutus-title::after {
+    background: #fdb801 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 10px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.aboutus-text {
+    color: #ced5ec;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0 0 35px;
+}
+
+a:hover, a:active {
+    color: #ffb901;
+    text-decoration: none;
+    outline: 0;
+}
+.aboutus-more {
+    border: 1px solid #fdb801;
+    border-radius: 25px;
+    color: #fdb801;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+.feature .feature-box .iconset {
+    background: transparent none repeat scroll 0 0;
+    float: left;
+    position: relative;
+    width: 6%;
+}
+
+
+.feature .feature-box .feature-content h4 {
+    color: chartreuse;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 0px;
+}
+
+
+.feature .feature-box .feature-content {
+    float: left;
+    width: 78%;
+}
+.feature .feature-box .feature-content h4 {
+    color: chartreuse;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+.feature .feature-box .feature-content p {
+    color: #cee409;
+    font-size: 20px;
+
+}
+.icon {
+    color : #f4b841;
+    padding:0px;
+    font-size:40px;
+    border: 1px solid #fdb801;
+    border-radius: 100px;
+    color: #fdb801;
+    font-size: 28px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+}

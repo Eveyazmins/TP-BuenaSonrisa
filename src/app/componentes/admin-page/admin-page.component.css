@@ -1,0 +1,99 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+.fondo{
+   
+    background-image: url(".../../../docs/assets/imagenes/dent4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -60px;
+    padding:4%;
+  }
+  
+  
+    
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+    
+    
+    
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+    
+    /* Center align the text within the three columns below the carousel */
+
+    /*
+    .marketing .col-lg-6 {
+      margin-bottom: 1.5rem;
+      text-align: center;
+      
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .fondo .col-lg-6 p {
+      margin-right: 10.75rem;
+   
+    
+    }
+    p{
+      text-align: center;
+      color:rgb(240, 143, 52);
+      font-size: 30px;
+      font-weight: bold;
+    }
+    h2
+    {
+      color:rgb(61, 6, 2);
+      margin-left: 60px;
+    
+    }
+    
+    */
+    
+    /* Featurettes
+    ------------------------- */
+    
+    /*
+    .featurette-divider {
+      margin: 5rem 0; /* Space out the Bootstrap <hr> more 
+    }
+    */
+    
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+    /*
+    @media (min-width: 40em) {
+    
+      .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+      }
+    
+      .featurette-heading {
+        font-size: 50px;
+      }
+    }
+    
+    @media (min-width: 62em) {
+      .featurette-heading {
+        margin-top: 7rem;
+      }
+    }
+    
+    */
+.example-card {
+  max-width: 400px;
+  font-family: 'Poppins', sans-serif;
+	-webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-size: x-large;
+
+}
+
+.example-header-image {
+  background-image: url('/assets/imagenes/dientefeliz1.jpg');
+  background-size: cover;
+}

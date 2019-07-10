@@ -1,0 +1,65 @@
+<div class="fondo">
+  <div class="container">
+    <div class="row main">
+      <div class="main-login main-center">
+      <h5>Solicitud de turnos</h5>
+        <form class="" method="post" action="#">
+          
+            <div class="form-group">
+            <!--<label for="BornDate" class="cols-sm-2 control-label">Fecha de Nacimiento</label>-->
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i></span>
+                <input type="datetime-local" class="form-control" name="BornDate" required id="BornDate"  placeholder="fecha de turno" [(ngModel)]="unTurno.fechaInicio"/>
+              </div>
+            </div>
+              </div>
+            <div class="form-group">
+          <!--	<label for="Sex" class="cols-sm-2 control-label">Genero</label> -->
+              <div class="cols-sm-10">
+              <div class="input-group">
+               <label >Selecciona tipo de turno</label>
+
+               <div class="col-md-12 radio-padding" (change)="aListar($event)">	
+                <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="clinico" [(ngModel)]="unTurno.especialidad"> Consulta
+                </label>
+                <br>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="imagenes" [(ngModel)]="unTurno.especialidad"> Imagenes
+                    </label>
+                    <br>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="mecanico" [(ngModel)]="unTurno.especialidad"> Mecanica Dental
+                    </label>
+                </div>
+                
+
+
+              </div>
+            </div>
+          </div>
+          <div *ngIf="unTurno.especialidad" >
+          <label>Seleccione profesional</label>
+          <select  >
+            <option *ngFor="let esp of lista" id="nombre">{{esp.nombre}}</option>
+          </select>
+        </div>
+          <br><br>
+
+          <div class="form-group">
+            <!--<label for="BornDate" class="cols-sm-2 control-label">Fecha de Nacimiento</label>-->
+            <div class="cols-sm-10">
+              <div class="input-group">
+              
+                <input type="button" class="form-control"   value="Enviar" (click)="enviar()"/>
+              </div>
+            </div>
+              </div>
+            
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="snackbar">{{Mensajes}}</div>
+</div>

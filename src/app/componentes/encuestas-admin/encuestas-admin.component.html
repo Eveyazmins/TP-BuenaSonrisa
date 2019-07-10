@@ -1,0 +1,58 @@
+<div class="fondo">
+
+    <div style="
+    margin-left: -60px;
+">
+</div>
+<div >
+    <h1 style="text-align: center">Encuestas</h1>
+        <section id="tabs" class="project-tab" style="
+        margin-left: 22%;
+    ">
+                <div class="container">
+                    <div class="row" >
+                        <div class="col-md-12" style="
+                        margin-left: -100px;
+                    ">
+                           
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <table class="table" cellspacing="0" style="text-align: center">
+                                        <thead>
+                                            <tr>
+                                              <th>id</th>
+                                              <th>cliente</th>
+                                              <th>Especialista</th>
+                                              <th>Puntaje Especialista</th>
+                                              <th>Puntaje Clinica</th>
+                                              <th>experiencia</th>
+                                              
+                                           
+                                              
+                                            </tr>
+                                        </thead>
+                                        <tbody style="text-align: center" *ngFor="let turno of lista2">
+                                            <tr >
+                                                <td>{{turno.id}}</td>
+                                                <td>{{turno.cliente}}</td>
+                                                <td>{{turno.especialista}}</td>
+                                                <td>{{turno.puntajeEsp}}</td>
+                                                <td>{{turno.puntajeCli}}</td>
+                                                <td>{{turno.experiencia}}</td>
+                                             
+                                                
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+</div>

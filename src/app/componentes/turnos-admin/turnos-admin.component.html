@@ -1,0 +1,65 @@
+<div class="fondo">
+
+    <div style="
+    margin-left: -60px;
+">
+    <input class="myButton" type="button" value="Turnos pedidos por clientes" (click)="listarPedido('cliente')">
+    <br>
+    <br>
+    <input class="myButton" type="button" value="Turnos pedidos por recepcion" (click)="listarPedido('recepcion')">
+    <br>
+    <br>
+    <input class="myButton" type="button" value="Turnos cancelados" (click)="listarEstado('cancelado')">
+    <br>
+    <br>
+    <input class="myButton" type="button" value="Turnos realizados" (click)="listarEstado('completado')">
+</div>
+<div *ngIf="mostrar">
+    <h1 style="text-align: center">Turnos {{titulo}}</h1>
+        <section id="tabs" class="project-tab">
+                <div class="container">
+                    <div class="row" >
+                        <div class="col-md-12" style="
+                        margin-left: -100px;
+                    ">
+                           
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <table class="table" cellspacing="0" style="text-align: center">
+                                        <thead>
+                                            <tr>
+                                              <th>id</th>
+                                              <th>Fecha</th>
+                                              <th>Especialidad</th>
+                                              <th>Especialista</th>
+                                              <th>Estado</th>
+                                              <th>cliente</th>
+                                              <th>Pedido Por</th>
+                                              
+                                            </tr>
+                                        </thead>
+                                        <tbody style="text-align: center" *ngFor="let turno of lista2">
+                                            <tr >
+                                                <td>{{turno.id}}</td>
+                                                <td>{{turno.fecha | date:'medium'}}</td>
+                                                <td>{{turno.especialidad}}</td>
+                                                <td>{{turno.especialista}}</td>
+                                                <td>{{turno.estado}}</td>
+                                                <td>{{turno.email}}</td>
+                                                <td>{{turno.solicitante}}</td>
+                                                
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+</div>

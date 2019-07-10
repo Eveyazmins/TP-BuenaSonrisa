@@ -1,0 +1,222 @@
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {float:left;width:50%}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 98%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+.fondo{
+
+    background-image: url(".../../../docs/assets/imagenes/slider-bg-2.jpg");
+    margin-top: -60px;
+    padding: 3%
+  }
+
+
+/*-----for border----*/
+.container{
+	font-family:Roboto,sans-serif;
+	  background-image:url(https://image.freepik.com/free-vector/dark-blue-blurred-background_1034-589.jpg) ;
+    
+     border-style: 1px solid grey;
+     padding: 5%;
+     text-align: center;
+     opacity: 0.8;
+     max-width: 500px;
+ 
+     
+}
+/*--- for label of first and last name---*/
+.lastname{
+	 margin-left: 10px;
+     font-family: sans-serif;
+     font-size: 14px;
+     color: white;
+     margin-top: 10px;
+}
+.firstname{
+    margin-left: 1px;
+    margin-right: 22px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-top: 11px;
+}
+#lname{
+	 margin-top:5px;
+}
+	  
+
+/*---for heading-----*/
+.heading{
+	 text-decoration:bold;
+	 text-align : center;
+	 font-size:30px;
+	 color:#F96;
+}
+/*-------for email----------*/
+  /*------label----*/
+#email{
+	  margin-top: 5px;
+}
+/*-----------for Password--------*/
+     /*-------label-----*/
+.mail{
+    margin-left: 1px;
+    margin-right: 22px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-top: 11px;
+}
+.pass{
+    margin-left: 1px;
+    margin-right: 22px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-top: 11px;
+}
+#password{
+ margin-top: 6px;
+}
+/*------------for phone Number--------*/
+      /*----------label--------*/
+.pno{
+	 font-size: 18px;
+     margin-left: -13px;
+     margin-top: 10px;
+     color: #ff9;
+	
+}	
+
+/*--------------for Gender---------------*/
+     /*--------------label---------*/
+.gender {
+	 color: white;
+     font-family: sans-serif;
+     font-size: 14px;
+     margin-left: 28px;
+     margin-top: 8px;
+}
+
+     /*---------- for Input type--------*/
+.col-xs-4.male{
+	 color: white;
+     font-size: 13px;
+     margin-top: 9px;
+     padding-bottom: 16px;
+}
+.col-xs-4.female {
+     color: white;
+     font-size: 13px;
+     margin-top: 9px;
+     padding-bottom: 16px;
+	 padding-right: 95px;
+}	
+/*------------For submit button---------*/
+.sbutton{
+	 color: white;
+     font-size: 20px;
+     border: 1px solid white;
+     background-color: #080808;
+     width: 32%;
+     margin-left: 41%;
+     margin-top: 16px;
+	 box-shadow: 0px 2px 2px 0px white;
+  	   
+   }
+.btn.btn-warning:hover {
+    box-shadow: 2px 1px 2px 3px #99ccff;
+	background:#5900a6;
+	color:#fff;
+	transition: background-color 1.15s ease-in-out,border-color 1.15s ease-in-out,box-shadow 1.15s ease-in-out;
+	
+}	 
+
+.archivo{
+    margin-left: 150px;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-top: 11px;
+}

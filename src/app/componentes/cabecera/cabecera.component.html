@@ -1,0 +1,39 @@
+	<!-- Header section -->
+	<header class="header-section">
+      <div class="header-warp">
+        <div class="header-bar-warp d-flex">
+          <div>
+            <h2 class="titulo">
+          Clinica Buena Sonrisa</h2>
+        </div>
+          <!-- site logo -->				
+          <nav class="top-nav-area w-100" style="
+          padding-top: 15px;">
+            <div class="user-panel" >
+               <div *ngIf="!verificarSesion()" >
+              <div ><a routerLink="/Login" >Ingresá</a></div>
+              <div ><a routerLink="/Registro" >Registrate</a></div>
+            </div>
+            <h4>{{muestraMail}}</h4>
+              <div *ngIf="verificarSesion()"><a routerLink="/" (click)="cerrarSesion()" style="color:rgb(22, 23, 20)">Cerrar sesion</a>
+                
+                
+            </div>
+          </div>
+            <!-- Menu -->
+            <ul class="main-menu primary-menu">
+              <li *ngIf="verificarSesion()"><a  (click)="redirige()">Inicio</a></li>
+              <li><a>Quien Soy</a>
+                <ul class="sub-menu">
+                  <li><a href="https://github.com/eveyazmins" target="blank">En Github</a></li>
+                  <li><a routerLink="/QuienSoy">Sobre Mi</a></li>
+                </ul>
+              </li>
+              
+              
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header section end -->
