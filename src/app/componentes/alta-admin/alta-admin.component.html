@@ -44,7 +44,8 @@
                             </label>
                         </div>
                         <div *ngIf="unUsuario.tipo == 'especialista' || empleado.tipo == 'mecanico' || empleado.tipo == 'imagenes'">
-                                <label class="radio-inline" style="
+                             <!--  
+                               <label class="radio-inline" style="
                                 margin-left: 16px;
                             ">
                                       <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="mecanico" > Mecanica
@@ -59,6 +60,15 @@
                                 ">
                                       <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="clinico"> Clinico
                                     </label>
+                                -->
+
+                                <select class="form-control" name="name" id="name" required [(ngModel)]="empleado.especialidad"
+                                >
+                                <option>Mecanica</option>
+                                <option>Imagenes</option>
+                                <option>Clinico</option>
+                             
+                             </select>
                         </div>
 					
 					<button type="submit" class="btn btn-default button-register" (click)="enviar()">Dar de Alta</button>

@@ -20,6 +20,7 @@ import { RegistrosComponent } from './../componentes/registros/registros.compone
   import { CancelarTurnoComponent } from '../componentes/cancelar-turno/cancelar-turno.component';
 import { TurnosAdminComponent } from '../componentes/turnos-admin/turnos-admin.component';
 import { EncuestasAdminComponent } from '../componentes/encuestas-admin/encuestas-admin.component';
+import {EncuestasClienteComponent} from '../componentes/encuestas-cliente/encuestas-cliente.component';
 import {ActivadorService} from './../servicios/activador.service';
 
 // declaro donde quiero que se dirija
@@ -45,6 +46,7 @@ const MiRuteo = [
 {path: 'Cliente' , component: ClientePageComponent, canActivate: [ActivadorService]},
 {path: 'PedirTurno', component: TurnosClienteComponent, canActivate: [ActivadorService]},
 {path: 'ListaTurnos', component: ListaTurnosClienteComponent, canActivate: [ActivadorService]},
+{path: 'EncuestasCli', component: EncuestasClienteComponent, canActivate: [ActivadorService]},
 
 //Recepcion
 {path: 'Recepcion' , component: RecepcionPageComponent, canActivate: [ActivadorService]},

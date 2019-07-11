@@ -80,6 +80,7 @@ export class AltaAdminComponent implements OnInit {
 
   altaEmpleado()
   {
+    console.log("entro!");
     this.db.collection("empleados").add({
 
       email: this.unUsuario.email,

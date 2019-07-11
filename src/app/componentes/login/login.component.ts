@@ -43,7 +43,6 @@ export class LoginComponent implements OnInit {
       this.progreso=0;
       this.ProgresoDeAncho="0%";
       const session = sessionStorage.getItem('user');
-    
 
           if(session==null)
           {
@@ -70,6 +69,7 @@ export class LoginComponent implements OnInit {
 
         unUsr.email = usuario.email;
         unUsr.tipo = usuario.tipo;
+        unUsr.nombre = usuario.nombre;
 
         this.todosLosUsuarios.push(unUsr);
         
@@ -296,8 +296,20 @@ export class LoginComponent implements OnInit {
 
     invitado()
     {
-      this.user.email="cliente1@gmail.com";
+      this.user.email="cliente@sonrisa.com";
         this.user.password="111111";
+    }
+
+    recepcionista()
+    {
+      this.user.email="recepcionista@sonrisa.com";
+      this.user.password="111111";
+    }
+
+    especialista()
+    {
+      this.user.email="especialista@sonrisa.com";
+      this.user.password="111111";
     }
 
 

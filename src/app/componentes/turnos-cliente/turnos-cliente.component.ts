@@ -16,23 +16,23 @@ export class TurnosClienteComponent implements OnInit {
   lista: Array<any> = [];
   unTurno: Turnos;
   Mensajes:string;
+  email:string;
+
   constructor(private db: AngularFirestore) { 
     this.unTurno = new Turnos();
-
-    
     
   }
   sala()
   {
     switch(this.unTurno.especialidad)
     {
-      case "clinico": 
+      case "Clinico": 
         this.unTurno.sala = "CONS0" + (Math.floor(Math.random()*(7-1) + 1).toString());
         break;
-        case "imagenes":
+        case "Imagenes":
           this.unTurno.sala = "IMAG08";
           break;
-        case "mecanico":
+        case "Mecanica":
           this.unTurno.sala = "MECA09";
         break;
 

@@ -62,6 +62,7 @@ import { CancelarTurnoComponent } from './componentes/cancelar-turno/cancelar-tu
 import { TurnosAdminComponent } from './componentes/turnos-admin/turnos-admin.component';
 import { EncuestasAdminComponent } from './componentes/encuestas-admin/encuestas-admin.component';
 import { ActivadorService } from './servicios/activador.service';
+import { EncuestasClienteComponent } from './componentes/encuestas-cliente/encuestas-cliente.component';
 
 
 @NgModule({
@@ -90,7 +91,8 @@ import { ActivadorService } from './servicios/activador.service';
     RegistrosComponent,
     CancelarTurnoComponent,
     TurnosAdminComponent,
-    EncuestasAdminComponent
+    EncuestasAdminComponent,
+    EncuestasClienteComponent
   ],
   imports: [
     BrowserModule,

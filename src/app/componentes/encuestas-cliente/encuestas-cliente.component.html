@@ -1,0 +1,101 @@
+<div class="fondo">
+        <section id="tabs" class="project-tab">
+                <br>
+                <h1 style="text-align: center">Encuestas</h1>
+                <br>
+        
+            <div class="container">
+          
+                <div class="row">
+                    <div class="col-md-12">
+                       
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                              
+
+<table class="table" cellspacing="0" style="text-align: center">
+    <thead>
+        <tr>
+          <th>Id</th>
+          <th>especialidad</th>
+          <th>Especialista</th>
+          <th>Estado Encuesta</th>
+          <th>Completar Encuesta</th>
+        </tr>
+    </thead>
+    <tbody style="text-align: center" *ngFor="let turno of lista2">
+        <tr >
+            <td>{{turno.id}}</td>
+            <td>{{turno.especialidad}}</td>
+            <td>{{turno.especialista}}</td>
+            <td>{{turno.estadoEncuesta}}</td>
+            <td><button data-toggle="modal" data-target="#squarespaceModal" class="btn btn-info center-block" (click)="mostrar(turno.id)">Completar Encuesta</button></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<div class="container" *ngIf="muestra2">
+        <div class="row" style="
+       
+       margin-left: 31%;
+        background-color: rgb(161, 194, 196);
+        width: 41%;
+        padding-bottom: 2%;
+    
+    ">
+    <h1 style="text-align: center">Completar Encuesta</h1>
+            <div role="form" class="col-md-9 go-right">
+                <div class="form-group">
+                    <span>Puntaje al especialista</span>
+               <!-- <input id="name" name="name" type="text" class="form-control" required [(ngModel)]="turno2.puntajeEsp">-->
+                <select class="form-control" name="name" id="name" required [(ngModel)]="turno2.puntajeEsp"
+                >
+                <option>Horrible</option>
+                <option>Malo</option>
+                <option>Regular</option>
+                <option>Bueno</option>
+                <option>Muy Bueno</option>
+                <option>Excelente</option>
+             </select>
+            </div>
+
+            <div class="form-group">
+                    <span>Puntúa a la clinica</span>
+                <!--<input id="phone" name="phone" type="text" class="form-control" required [(ngModel)]="turno2.puntajeCli">-->
+                <select class="form-control" name="phone" id="phone" required [(ngModel)]="turno2.puntajeCli"
+                >
+                <option>Horrible</option>
+                <option>Malo</option>
+                <option>Regular</option>
+                <option>Bueno</option>
+                <option>Muy Bueno</option>
+                <option>Excelente</option>
+             
+             </select>
+            </div>
+            <div class="form-group">
+                    <span>Breve descripcion de experiencia</span><br>
+                <input type="text" style="height: 100px; width: 400px" maxlength="66" [(ngModel)]="turno2.experiencia">
+                
+            </div>
+            <div>
+            <!--    <input type="btn btn-info center-block" (click)="hacer()" value="Enviar">-->
+                <button data-toggle="modal" data-target="#squarespaceModal" class="btn btn-info center-block" (click)="hacer()" value="Enviar">Enviar</button>
+     
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+</div>

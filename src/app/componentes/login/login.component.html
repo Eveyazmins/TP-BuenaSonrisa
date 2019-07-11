@@ -39,8 +39,10 @@
               <br>
               <button  class="btn btn-primary" (click)="MoverBarraDeProgreso()" >Ingresar</button>
               
-              <button   class="btn btn-primary" (click)="admin()" >Ingresar como admin</button>
-              <button class="btn btn-primary"  (click)="invitado()" >Ingresar como invitado</button>
+              <button   class="btn btn-primary" (click)="admin()" >Ingresar como Admin</button>
+              <button class="btn btn-primary"  (click)="invitado()" >Ingresar como Cliente</button>
+              <button class="btn btn-primary"  (click)="recepcionista()" >Ingresar como Recepcionista</button>
+              <button class="btn btn-primary"  (click)="especialista()" >Ingresar como Especialista</button>
           </div>
           <div *ngIf="!logeando" class="progress">
               <div class="progress-bar progress-bar-info progress-bar-striped active" [class]="clase" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" [style.width]="ProgresoDeAncho" >
