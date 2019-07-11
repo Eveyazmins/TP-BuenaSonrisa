@@ -1,40 +1,35 @@
-# Trabajo Practico Numero 2 - Buena Sonrisa
-url de la web buena sonrisa: 
+# TP2 - Buena Sonrisa
+https://buenasonrisa19.000webhostapp.com/
 
 
 
 # Usuarios
-Los usuarios para poder testearlo son:
+
 Administrador:
 admin@sonrisa.com
 pass: 111111
 
 Especialistas:
-especialista1@sonrisa.com
-especialista2@sonrisa.com
-especialista3@sonrisa.com
-
-todos con pass 111111
+especialista@sonrisa.com
+especialista_2@sonrisa.com
+especialista_3@sonrisa.com
+pass: 111111
 
 Clientes:
-cliente1@gmail.com 
-cliente2@gmail.com
-
-tambien pass 111111
+cliente@sonrisa.com 
+pass: 111111
 
 Recepcionista:
-recepcionista1@sonrisa.com
-pass 111111
+recepcionista@sonrisa.com
+pass: 111111
 
 # Gestiones que se realizan
-- Alta de usuarios con el administrador
-- Alta de turnos de cliente y de recepcionista
-- registro para ingresar
-- estadisticas como admin de turnos, de cantidad, empleados, logueo
--como recepcionista se ven los turnos con posibilidad de cancelarlos
--el usuario pide turno y una vez que el especialista lo completa se envia reseña
-- el usuario responde una encuesta
--estadistica para especialista
--estadistica para cliente
-
+- Login y registro
+- Alta de usuarios con admin
+- Registro de ingresos
+- Alta de turnos
+- Gestion de turnos
+- Cancelación de turnos
+- Registro de turnos, cancelaciones
+- Encuestas
 
