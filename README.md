@@ -1,7 +1,7 @@
 # Trabajo Practico Numero 2 - Buena Sonrisa
-url de la web buena sonrisa: https://buenasonrisa-1cbf7.firebaseapp.com/
+url de la web buena sonrisa: 
 
-Esta realizada con Firebase, tanto en el Cloud de imagenes como logueo y base de datos.
+
 
 # Usuarios
 Los usuarios para poder testearlo son:
@@ -12,7 +12,7 @@ pass: 111111
 Especialistas:
 especialista1@sonrisa.com
 especialista2@sonrisa.com
-especialista4@sonrisa.com
+especialista3@sonrisa.com
 
 todos con pass 111111
 
@@ -27,7 +27,7 @@ recepcionista1@sonrisa.com
 pass 111111
 
 # Gestiones que se realizan
-- Alta de usuarios por el administrador
+- Alta de usuarios con el administrador
 - Alta de turnos de cliente y de recepcionista
 - registro para ingresar
 - estadisticas como admin de turnos, de cantidad, empleados, logueo

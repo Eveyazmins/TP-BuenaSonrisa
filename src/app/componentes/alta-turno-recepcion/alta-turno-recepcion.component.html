@@ -31,6 +31,7 @@
                <label >Selecciona tipo de turno</label>
 
                <div class="col-md-12 radio-padding" (change)="aListar($event)">	
+                 <!--
                 <label class="radio-inline">
                       <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="clinico" [(ngModel)]="unTurno.especialidad"> Consulta
                 </label>
@@ -42,6 +43,18 @@
                     <label class="radio-inline">
                       <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="mecanico" [(ngModel)]="unTurno.especialidad"> Mecanica Dental
                     </label>
+
+                  -->
+
+                  <select class="form-control" name="name" id="name" required [(ngModel)]="unTurno.especialidad"
+                  >
+                  <option value="Mecanica">Mecanica dental</option>
+                  <option value="Imagenes">Imagenes</option>
+                  <option value="Clinico">Clinico</option>
+              
+               </select>
+
+               
                 </div>
                 
 

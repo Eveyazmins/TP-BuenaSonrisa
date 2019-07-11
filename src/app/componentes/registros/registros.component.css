@@ -57,7 +57,7 @@
 }
 .project-tab thead{
     background: #c4a5b8;
-    color: #333;
+    color: rgb(211, 142, 142);
 }
 .project-tab td{
     text-decoration: none;

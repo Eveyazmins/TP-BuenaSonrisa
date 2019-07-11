@@ -25,13 +25,13 @@ export class AltaTurnoRecepcionComponent implements OnInit {
   {
     switch(this.unTurno.especialidad)
     {
-      case "clinico": 
+      case "Clinico": 
         this.unTurno.sala = "CONS0" + (Math.floor(Math.random()*(7-1) + 1).toString());
         break;
-        case "imagenes":
+        case "Imagenes":
           this.unTurno.sala = "IMAG08";
           break;
-        case "mecanico":
+        case "Mecanica":
           this.unTurno.sala = "MECA09";
         break;
 

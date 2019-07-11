@@ -78,6 +78,8 @@ export class EncuestasClienteComponent implements OnInit {
         )
         .then(function() {
             console.log("Se completa la encuesta");
+            alert("Encuesta completa");
+           //poner router hasta inicio
             
         })
         .catch(function(error) {

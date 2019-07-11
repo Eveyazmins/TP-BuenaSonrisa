@@ -1,9 +1,10 @@
 .fondo{
 
-    background-image: url(".../../../docs/assets/imagenes/slider-bg-2.jpg");
+    background-image: url(".../../../docs/assets/imagenes/fondodientes1.jpg");
     margin-top: -60px;
     padding:6%;
   }
+
 
 
   .project-tab {
@@ -44,14 +45,14 @@
     color: #3cff00;
 }
 .project-tab thead{
-    background: #f3f3f3;
+    background: #c4a5b8;
     color: #333;
 }
 .project-tab td{
     text-decoration: none;
-    color: darkorange;
+    color: #f29c93;
     font-weight: 900;
-    background-color: brown;
+    background-color: #5c2440;
 }
 
 .myButton {
@@ -73,7 +74,7 @@
 	text-shadow:0px 1px 0px #f21c0c;
 }
 .myButton:hover {
-	background-color:#fa0d00;
+	background-color:#c02553;
 }
 .myButton:active {
 	position:relative;

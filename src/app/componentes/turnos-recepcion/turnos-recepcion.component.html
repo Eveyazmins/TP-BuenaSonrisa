@@ -1,3 +1,4 @@
+
 <div class="fondo">
   <head>
 
@@ -7,31 +8,31 @@
   </head>
   <div style="
   height: 15em;
-  text-align: center;
-  margin-left: 28%;
+  text-align: left;
   ">
-    <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg" style="
-    font-size: 60px;">Listado de Turnos</a>
+    <a data-toggle="modal" class="myButton" type="button" href="#myModal" >Listado de Turnos</a>
     <br>
     <br>
     <br>
     <br>
-    <a data-toggle="modal" routerLink="/AltaTurnoRecepcion" class="btn btn-primary btn-lg" style="
-    font-size: 60px;">Alta de Turno</a>
+    <a data-toggle="modal" routerLink="/AltaTurnoRecepcion" class="myButton" type="button">Alta de Turno</a>
    
   </div>
+  
   
 
   <div class="modal fade" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content" style="
-    background-color: darkslateblue;">
+    background-color: rgb(90, 43, 63);">
       <div class="modal-header">
-        <h1 style="color: white" >Turnos</h1>
+        <h1 style="color: rgb(216, 174, 135)" >Turnos</h1>
       </div>
+      <!--
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
       </div>
+      -->
       <div class="modal-body">
         <table class="table table-striped table-dark" cellspacing="0" style="text-align: center">
           <thead>
@@ -59,8 +60,8 @@
       </table>
       </div>
       
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
+    </div>
+  </div>
+  </div>
 
 </div>
